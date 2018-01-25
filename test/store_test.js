@@ -1,7 +1,7 @@
 import store from './test_helper';
 import expect from 'expect';
 
-describe('store', () => {
+describe('Store', () => {
     it('should have no book selected by default', () => {
         store.dispatch({
             type: 'BOOK_SELECTED',
@@ -13,7 +13,7 @@ describe('store', () => {
         expect(actual).toEqual(expected);
     });
 
-    it('should be able to select a book from the list', () => {
+    it('should be able to get book details from the list', () => {
         const expected = store.getState().books[0];
 
         store.dispatch({

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
-class BookList extends Component{
+export class BookList extends Component{
   renderList(){
     return this.props.books.map( book => {
       return(
